@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e197ff9cd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./app.css">
+    <title>Netflix-Dashboard</title>
+</head>
+<body class="text-xs">
+    <img src="./img/background.jpg" alt="background-img" class="absolute top-0 w-full h-full z-[-1] object-cover">
+
+    <div class="flex text-white items-center h-screen w-full justify-center">
+
+        <!--==== Menu ====-->
+        <div class="menu p-2 ml-5 mr-5 backdrop-blur-xl rounded-3xl flex flex-col justify-between gap-6 place-items-center border-2 pt-2 pb-3">
+
+            <i class="fa-regular fa-circle-play bg-red-600 p-2 rounded-2xl" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-table-cells-large" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-tv" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-podcast" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-house-chimney-window" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+
+        </div>
+        <main class="flex">
+            <!--==== Main ====-->
+            <div class=" main p-2 backdrop-blur-xl flex border-solid border-y-2 border-l-2 gap-10">
+                <div class="side-bar flex flex-col justify-between gap-8 w-full m-5">
+
+                    <img src="./img/netflix-logo.png" alt="logo" class="w-32">
+
+
+                    <div class="flex flex-col gap-5">
+                        <div>
+                            <i class="fa-solid fa-circle-play" style="color: #ff0000;"></i><span class="ml-3">Browse</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i><span class="ml-3">Wishlist</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-calendar" style="color: #ffffff;"></i><span class="ml-3"> Coming Soon</span>
+                        </div>                   
+                    </div>
+                    <div>
+                        New Trailers &#128293;
+                        <div class="mt-5">
+                            <div class="trailer">
+                                <img src="./img/shadow-and-bone.png" alt="shadow-and-bone">
+                                <div class="title flex justify-between backdrop-blur-xl border-solid place-items-center">
+                                    <span>Shadow and Bone</span>
+                                    <i class="fa-solid fa-play icon backdrop-blur-xl boprder-2 border-solid p-2 w-7 text-center"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="trailer">
+                                <img src="./img/the-night-agent.jpeg" alt="shadow-and-bone">
+                                <div class="title flex justify-between backdrop-blur-xl border-solid place-items-center">
+                                    <span>The Night Agent</span>
+                                    <i class="fa-solid fa-play icon backdrop-blur-xl boprder-2 border-solid p-2 w-7 text-center"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="trailer">
+                                <img src="./img/witcher.png" alt="shadow-and-bone">
+                                <div class="title flex justify-between backdrop-blur-xl border-solid place-items-center">
+                                    <span>Shadow and Bone</span>
+                                    <i class="fa-solid fa-play icon backdrop-blur-xl boprder-2 border-solid p-2 w-7 text-center"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>    
+            </div>
+
+            <!--==== Content ====-->
+            
+            <div class=" content hero p-5 backdrop-blur-xl border-solid border-2 gap-10 mr-5">
+                <div class="search-bar flex place-items-center w-100 justify-between"> 
+                    <div class="p-5 flex place-items-center ">
+                        <a href="#"><i class="fa-solid fa-chevron-left" style="color: rgba(255, 255, 255, 0.4);"></i></a>
+                        <a href="#" class="ml-4"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
+
+                        <!-- =====Search Bar===== -->
+                        <form action="search" class="search ml-5 p  backdrop-blur-xl">
+                            <input type="text" name="search" value="Search..." class="search backdrop-blur-xl border-solid p-2 w-full">
+                        </form>
+                    </div>
+                    <div class="icon backdrop-blur-xl border-solid  p-2 w-8 text-center">
+                        <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="peaky-hero p-5">
+                    <img src="./img/peaky.png" alt="">
+                    <div class="buttons flex place-items-center gap-3">
+                        <div class="">
+                            <a href="#" class="watch bg-red-600">Watch</a>
+                        </div>
+                        <div class="plus backdrop-blur-xl border-solid  p-2 w-9 text-center">
+                            <a href="#"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+
+
+
+
+
+
+    </div>
+
+    
+
+    <div class="samples bg-white">
+        <!-- bell-icon -->
+
+    <!-- plus-icon -->
+    <i class="fa-solid fa-plus"></i>
+    <!-- play-icon -->
+    <i class="fa-solid fa-play"></i>
+    <!-- more-icon -->
+    <i class="fa-solid fa-ellipsis-vertical"></i> 
+    </div>
+    
+</body>
+</html>
