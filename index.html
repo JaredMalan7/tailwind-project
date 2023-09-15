@@ -10,7 +10,7 @@
 <body class="text-xs">
     <img src="./img/background.jpg" alt="background-img" class="absolute top-0 w-full h-full z-[-1] object-cover">
 
-    <div class="flex text-white items-center h-screen w-full justify-center">
+    <div class="dashboard-container flex text-white items-center h-screen w-full justify-center">
 
         <!--==== Menu ====-->
         <div class="menu p-2 ml-5 mr-5 backdrop-blur-xl rounded-3xl flex flex-col justify-between gap-6 place-items-center border-2 pt-2 pb-3">
@@ -26,7 +26,7 @@
         <main class="flex">
             <!--==== Main ====-->
             <div class=" main p-2 backdrop-blur-xl flex border-solid border-y-2 border-l-2 gap-10">
-                <div class="side-bar flex flex-col justify-between gap-8 w-full m-5">
+                <div class="side-bar flex flex-col justify-between gap-8 w-full m-4 min-w-153">
 
                     <img src="./img/netflix-logo.png" alt="logo" class="w-32">
 
@@ -80,31 +80,50 @@
             <!--==== Content ====-->
             
             <div class=" content hero p-5 backdrop-blur-xl border-solid border-2 gap-10 mr-5">
-                <div class="search-bar flex place-items-center w-100 justify-between"> 
+                <div class="search-bar flex place-items-center w-100 justify-between mb-4"> 
                     <div class="p-5 flex place-items-center ">
                         <a href="#"><i class="fa-solid fa-chevron-left" style="color: rgba(255, 255, 255, 0.4);"></i></a>
                         <a href="#" class="ml-4"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
 
                         <!-- =====Search Bar===== -->
-                        <form action="search" class="search ml-5 p  backdrop-blur-xl">
-                            <input type="text" name="search" value="Search..." class="search backdrop-blur-xl border-solid p-2 w-full">
-                        </form>
+                        <div action="search" class="search ml-5 p  backdrop-blur-xl flex place-items-center">
+                            <i class="fa-solid fa-microphone pl-3" style="color: #ffffff;"></i>
+                            <input type="text" name="search" value="Search..." class="bg-transparent p-2 w-full">
+
+                        </div>
                     </div>
-                    <div class="icon backdrop-blur-xl border-solid  p-2 w-8 text-center">
-                        <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                    <div class="flex gap-3 place-items-center">
+                        <div class="icon backdrop-blur-xl border-solid  p-2 w-8 text-center">
+                            <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="user flex place-items-center p-3 gap-3 rounded-full">
+                            <img src="./img/user.JPG" alt="user-img" class="jared w-1/5 border-2 border-solid rounded-3xl">
+                            <div class="flex flex-col place-items-center">
+                                <span>Jared Malan</span>
+                                <span class="user-name">@jared-malan</span>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
 
-                <div class="peaky-hero p-5">
-                    <img src="./img/peaky.png" alt="">
-                    <div class="buttons flex place-items-center gap-3">
-                        <div class="">
-                            <a href="#" class="watch bg-red-600">Watch</a>
+                <div class="peaky-hero p-0 relative">
+                    <img src="./img/peaky.jpeg" alt="peaky" class="peaky-img">
+
+                    <div class="buttons absolute bottom-0 left-0 h-full flex flex-col justify-center place-items-center">
+                        
+                        
+                        <img src="./img/peaky-logo.png" alt="peaky-logo" class="peaky-logo object-contain">
+                        <p class="pt-5">2013 - 
+                            Drama - 5 seassons </p>
+                        <div class="flex place-items-center gap-4 pt-3">
+                            <div>
+                                <a href="#" class="watch bg-red-600">Watch</a>
+                            </div>
+                            <div class="plus backdrop-blur-xl border-solid  p-2 w-9 text-center">
+                                <a href="#"><i class="fa-solid fa-plus"></i></a>
+                            </div>
                         </div>
-                        <div class="plus backdrop-blur-xl border-solid  p-2 w-9 text-center">
-                            <a href="#"><i class="fa-solid fa-plus"></i></a>
-                        </div>
+                        
                         
                         
                     </div>
