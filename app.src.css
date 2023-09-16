@@ -3,21 +3,13 @@
 @tailwind utilities; 
 
 
-
-
-/* =====We had to do this so that we could override tailwind and get the heading back to how it should be==== */
-/* h1{
-    font-weight: bold;
-    font-size: 2rem;
-} */
-
 @layer base {
 
     .menu{
         border-color: rgba(255, 255, 255, 0.1);
     }
     .dashboard-container{
-        max-width: 80%;
+        max-width: 70%;
         margin: 0 auto;
     }
 
@@ -76,20 +68,108 @@
     }
 
     .buttons{
-        padding: 4em;
+        padding: 2em;
+        top: 5%;
     }
 
     .peaky-logo{
-        width: 14vw;
+        width: 10vw;
     }
-    
+
     .user{
         border-color: rgba(255, 255, 255, 0.02);
         background-color: rgba(220, 220, 220, 0.05);
         border-radius: 15px;
+        width: 70%;
     }
-
+    .user-notification{
+        margin-right: -1em;
+    }
     .jared {
         border-color: red;
+        min-width: 38.65px;
+    }
+
+    .h-4{
+        @apply font-bold text-base;
+    }
+
+    .show img{
+        border-radius: 15px 15px 0 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .label{
+        position: relative;
+        z-index: 3;
+        border-radius: 0 0 15px 15px;
+        padding: .1rem 1rem .7rem 1.2rem;
+        background: linear-gradient(to bottom, transparent 0%, black 100%);
+    }
+
+    .play-btn{
+        top: 35%;
+        left: 45%;
+    }
+
+    .time-red{
+        width: 30%;
+        border: 2px solid red;
+        border-radius: 10px 0 0 10px;
+    }
+    .time-white{
+        width: 70%;
+        border-radius: 0 10px 10px 0;
+        border: 1.5px solid white;
+    }
+
+    .timing{
+        bottom: 0;
+        left: 0;
+    }
+
+
+    .time-red-4{
+        width: 80%;
+        border: 2px solid red;
+        border-radius: 10px 0 0 10px;
+    }
+
+
+
+    .time-red-2{
+        width: 65%;
+        border: 2px solid red;
+        border-radius: 10px 0 0 10px;
+    }
+    .time-white-2{
+        width: 35%;
+        border-radius: 0 10px 10px 0;
+        border: 1.5px solid white;
+    }
+
+
+
+    .time-red-3{
+        width: 15%;
+        border: 2px solid red;
+        border-radius: 10px 0 0 10px;
+    }
+    .time-white-3{
+        width: 85%;
+        border-radius: 0 10px 10px 0;
+        border: 1.5px solid white;
+    }
+
+
+
+    .time-white-4{
+        width: 20%;
+        border-radius: 0 10px 10px 0;
+        border: 1.5px solid white;
     }
 }
+
+
+

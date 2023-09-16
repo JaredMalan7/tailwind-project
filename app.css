@@ -439,7 +439,7 @@ video {
 }
 
 .dashboard-container{
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -498,21 +498,106 @@ video {
 }
 
 .buttons{
-  padding: 4em;
+  padding: 2em;
+  top: 5%;
 }
 
 .peaky-logo{
-  width: 14vw;
+  width: 10vw;
 }
 
 .user{
   border-color: rgba(255, 255, 255, 0.02);
   background-color: rgba(220, 220, 220, 0.05);
   border-radius: 15px;
+  width: 70%;
+}
+
+.user-notification{
+  margin-right: -1em;
 }
 
 .jared {
   border-color: red;
+  min-width: 38.65px;
+}
+
+.h-4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.show img{
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.label{
+  position: relative;
+  z-index: 3;
+  border-radius: 0 0 15px 15px;
+  padding: .1rem 1rem .7rem 1.2rem;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.play-btn{
+  top: 35%;
+  left: 45%;
+}
+
+.time-red{
+  width: 30%;
+  border: 2px solid red;
+  border-radius: 10px 0 0 10px;
+}
+
+.time-white{
+  width: 70%;
+  border-radius: 0 10px 10px 0;
+  border: 1.5px solid white;
+}
+
+.timing{
+  bottom: 0;
+  left: 0;
+}
+
+.time-red-4{
+  width: 80%;
+  border: 2px solid red;
+  border-radius: 10px 0 0 10px;
+}
+
+.time-red-2{
+  width: 65%;
+  border: 2px solid red;
+  border-radius: 10px 0 0 10px;
+}
+
+.time-white-2{
+  width: 35%;
+  border-radius: 0 10px 10px 0;
+  border: 1.5px solid white;
+}
+
+.time-red-3{
+  width: 15%;
+  border: 2px solid red;
+  border-radius: 10px 0 0 10px;
+}
+
+.time-white-3{
+  width: 85%;
+  border-radius: 0 10px 10px 0;
+  border: 1.5px solid white;
+}
+
+.time-white-4{
+  width: 20%;
+  border-radius: 0 10px 10px 0;
+  border: 1.5px solid white;
 }
 
 *, ::before, ::after {
@@ -623,14 +708,6 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -645,6 +722,14 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .ml-3 {
@@ -663,12 +748,24 @@ video {
   margin-right: 1.25rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
 .flex {
   display: flex;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-full {
@@ -691,10 +788,6 @@ video {
   width: 1.75rem;
 }
 
-.w-8 {
-  width: 2rem;
-}
-
 .w-9 {
   width: 2.25rem;
 }
@@ -709,6 +802,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .place-items-center {
@@ -727,8 +824,16 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -763,6 +868,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -778,6 +887,11 @@ video {
 
 .border-solid {
   border-style: solid;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-red-600 {
@@ -836,6 +950,10 @@ video {
   padding-top: 0.75rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -860,9 +978,5 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-/* =====We had to do this so that we could override tailwind and get the heading back to how it should be==== */
 
-/* h1{
-    font-weight: bold;
-    font-size: 2rem;
-} */
+
