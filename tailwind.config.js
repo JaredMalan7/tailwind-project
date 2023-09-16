@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      minWidth:{"153":"153px"}
+      minWidth:{"200":"200px"}
     },
   },
   plugins: [],

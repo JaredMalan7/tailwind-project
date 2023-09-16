@@ -23,7 +23,8 @@
         border-radius: 0 25px 25px 0;
         border-right: none;
         border-color: rgba(255, 255, 255, 0.1);
-        min-width: 550px;
+        min-width: 650px;
+        width: 90%;
     }
 
     .title{
@@ -69,11 +70,12 @@
 
     .buttons{
         padding: 2em;
-        top: 5%;
+        top: 0;
     }
 
     .peaky-logo{
-        width: 10vw;
+        width: 7vw;
+        min-width: 96px;
     }
 
     .user{
@@ -92,6 +94,9 @@
 
     .h-4{
         @apply font-bold text-base;
+    }
+    .show{
+        max-width: 270px;
     }
 
     .show img{
@@ -168,6 +173,11 @@
         width: 20%;
         border-radius: 0 10px 10px 0;
         border: 1.5px solid white;
+    }
+
+    .watching {
+        max-width: 270px;
+        min-width: 200px;
     }
 }
 

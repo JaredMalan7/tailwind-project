@@ -453,7 +453,8 @@ video {
   border-radius: 0 25px 25px 0;
   border-right: none;
   border-color: rgba(255, 255, 255, 0.1);
-  min-width: 550px;
+  min-width: 650px;
+  width: 90%;
 }
 
 .title{
@@ -499,11 +500,12 @@ video {
 
 .buttons{
   padding: 2em;
-  top: 5%;
+  top: 0;
 }
 
 .peaky-logo{
-  width: 10vw;
+  width: 7vw;
+  min-width: 96px;
 }
 
 .user{
@@ -526,6 +528,10 @@ video {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
+}
+
+.show{
+  max-width: 270px;
 }
 
 .show img{
@@ -598,6 +604,11 @@ video {
   width: 20%;
   border-radius: 0 10px 10px 0;
   border: 1.5px solid white;
+}
+
+.watching {
+  max-width: 270px;
+  min-width: 200px;
 }
 
 *, ::before, ::after {
@@ -780,8 +791,12 @@ video {
   width: 20%;
 }
 
-.w-32 {
-  width: 8rem;
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-44 {
+  width: 11rem;
 }
 
 .w-7 {
@@ -796,8 +811,8 @@ video {
   width: 100%;
 }
 
-.min-w-153 {
-  min-width: 153px;
+.min-w-200 {
+  min-width: 200px;
 }
 
 .flex-col {
