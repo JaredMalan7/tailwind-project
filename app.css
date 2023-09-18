@@ -434,8 +434,12 @@ video {
   display: none;
 }
 
-.background-img{
-  min-height: 100%;
+body{
+  min-height: 1100px;
+}
+
+img.background-img{
+  min-height: 1100px;
 }
 
 .menu{
@@ -443,7 +447,7 @@ video {
 }
 
 .dashboard-container{
-  max-width: 70%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
