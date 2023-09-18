@@ -434,6 +434,10 @@ video {
   display: none;
 }
 
+.background-img{
+  min-height: 100%;
+}
+
 .menu{
   border-color: rgba(255, 255, 255, 0.1);
 }
@@ -468,6 +472,7 @@ video {
 .trailer img{
   border-radius: 15px;
   margin-bottom: -3.6em;
+  max-width: 200px;
 }
 
 .search {
@@ -531,7 +536,7 @@ video {
 }
 
 .show{
-  max-width: 270px;
+  max-width: 220px;
 }
 
 .show img{
@@ -607,7 +612,7 @@ video {
 }
 
 .watching {
-  max-width: 270px;
+  max-width: 220px;
   min-width: 200px;
 }
 
